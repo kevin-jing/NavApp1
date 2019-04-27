@@ -22,5 +22,13 @@ namespace NavApp1
         {
             this.Frame.Navigate(typeof(Page2), name.Text);
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //BackButton.IsEnabled = this.Frame.CanGoBack;
+
+
+            base.OnNavigatedTo(e);
+        }
     }
 }
